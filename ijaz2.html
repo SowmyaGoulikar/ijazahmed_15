@@ -1,0 +1,77 @@
+<html>
+
+<head>
+
+     <title>Game</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.8/css/bootstrap.min.css"> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+        <link rel="stylesheet" href="game%20page2.js">
+        <link rel="stylesheet" href="style.css">
+        
+</head>
+
+<body>
+     <div class="developer">
+    <h4 id="player_name1"></h4> <span  id="player_score1"></span>
+    <h4 id="player_name2" ></h4> <span  id="player_score2"></span></div>
+
+<div class="container">
+<center>
+<h2 style=" font:40px sans-serif white; margin:auto;" >The Maths Quiz Game: </h2>
+<h3 style="color:white" id="player_Question"> </h3>
+<h3 style="color:white" id="player_Answer"></h3>
+  
+<br><br>
+<h6 style="font: 20px white sans-serif; ">Number1</h6>
+
+<input type="text" id="number1" class="form-control" placeholder="Number 1">
+<br>
+<h6 style="font:20px white sans-serif">Number2</h6>
+
+<input type="text" id="number2" class="form-control" placeholder="Number 2"> <br><br>
+
+<button onclick="send()" id="sendbtn" class="success" style="width:30%">Send</button> </center>
+</div>
+    
+   <center> <div class="quebox" id="output" style=" width: 30%;"></div></center>
+    <script src="ijaz2.js"></script>
+</body>
+<style>
+    .container{
+        background-color: darkslategrey;
+        margin: auto;
+        border: 2px white groove;
+        border-radius: 30px;
+        width: 40%;
+        height: 80%;
+         }
+    .quebox{ 
+    background-color: darkslategrey;
+        margin: 5px;
+        border: 2px white groove;
+        border-radius: 30px;
+        width: 40%;
+        height: 50%;
+    }
+    .success{
+        height: 40px;
+        width: 40px;
+        border-radius: 18px;
+        font-size: 20px;
+        color: firebrick;
+        background-color: burlywood;
+    }
+    .success:hover{
+        background-color: fuchsia;
+    }
+    .developer{
+        height: 100px;
+        width: 100px;
+        font-size: 10px;
+        color: crimson;
+        background-color: aquamarine;
+    }
+    </style>
+</html>
